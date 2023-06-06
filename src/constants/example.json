@@ -1,0 +1,92 @@
+{
+    "user" : [
+        {
+            "id" : 0,
+            "name" : "Jane",
+            "surname" : "Doe",
+            "title" : "Researcher"
+        }
+    ],
+
+    "profile": [
+        {
+            "id": 0,
+            "type": "Telephone",
+            "content": "+55555555",
+            "url": "tel:+55555555"
+        },
+        {
+            "id": 1,
+            "type": "Mail",
+            "content": "janedoe@gmail.com",
+            "url": "mailto:janedoe@gmail.com"
+        },
+        {
+            "id": 2,
+            "type": "Pin",
+            "content": "Los Angles",
+            "url": " "
+        }
+    ],
+    "social": [
+        {
+            "id": 0,
+            "type": "Facebook",
+            "url": "http://www.facebook.com"
+        },
+        {
+            "id": 1,
+            "type": "Twitter",
+            "url": "http://www.twitter.com"
+        },
+        {
+            "id": 2,
+            "type": "Instagram",
+            "url": "http://www.instagram.com"
+        },
+        {
+            "id": 3,
+            "type": "Snapchat",
+            "url": "http://www.snapchat.com"
+        },
+        {
+            "id": 4,
+            "type": "Behance",
+            "url": "http://www.behance.net"
+        },
+        {
+            "id": 5,
+            "type": "Bank",
+            "url": "bankNumber"
+        },        {
+            "id": 0,
+            "type": "Facebook",
+            "url": "http://www.facebook.com"
+        },
+        {
+            "id": 1,
+            "type": "Twitter",
+            "url": "http://www.twitter.com"
+        },
+        {
+            "id": 2,
+            "type": "Instagram",
+            "url": "http://www.instagram.com"
+        },
+        {
+            "id": 3,
+            "type": "Snapchat",
+            "url": "http://www.snapchat.com"
+        },
+        {
+            "id": 4,
+            "type": "Behance",
+            "url": "http://www.behance.net"
+        },
+        {
+            "id": 5,
+            "type": "Bank",
+            "url": "bankNumber"
+        }
+    ]
+}

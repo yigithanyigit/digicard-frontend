@@ -1,0 +1,10 @@
+Every time clicked a link webpage loading again, In the react router website it has a solution.
+??? https://reactrouter.com/en/main/start/tutorial#client-side-routing
+
+Make Routing Better
+
+
+
+
+
+// Remove Root Requests and do every requests at in route.
