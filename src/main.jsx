@@ -29,25 +29,30 @@ const router = createBrowserRouter([
         path: "user",
         element: <Root/>,
         errorElement: <ErrorPage/>,
+
         children: [
             {
                 path: "profile/:id",
                 element: <Hero/>,
                 loader: userLoader,
+                errorElement: <ErrorPage/>,
             },
             {
                 path: "login",
                 element: <Login/>,
-                action: loginAction
+                action: loginAction,
+                errorElement: <ErrorPage/>,
             },
             {
                 path: "register",
                 element: <Register/>,
+                errorElement: <ErrorPage/>,
             },
             {
                 path: "edit",
                 element: <Edit/>,
                 loader: editLoader,
+                errorElement: <ErrorPage/>,
             },
             {
 
@@ -55,6 +60,7 @@ const router = createBrowserRouter([
                 element: <EditPersonal/>,
                 loader: editPersonalLoader,
                 action: editPersonalAction,
+                errorElement: <ErrorPage/>,
 
             },
             {
@@ -63,6 +69,7 @@ const router = createBrowserRouter([
                 element: <EditPersonalInfo/>,
                 loader: editPersonalInfoLoader,
                 action: addPersonalInfoAction,
+                errorElement: <ErrorPage/>,
 
             },
             {
@@ -70,6 +77,7 @@ const router = createBrowserRouter([
                 path: ":uid/edit/social",
                 element: <EditSocials/>,
                 loader: editSocialLoader,
+                errorElement: <ErrorPage/>,
 
 
 
@@ -79,12 +87,14 @@ const router = createBrowserRouter([
                 element: <AddSocial/>,
                 loader: addSocialLoader,
                 action: addSocialAction,
+                errorElement: <ErrorPage/>,
             },
             {
                 path: ":uid/add/social",
                 element: <AddSocial/>,
                 loader: addSocialLoader,
                 action: addSocialAction,
+                errorElement: <ErrorPage/>,
 
             },
             {
@@ -92,6 +102,7 @@ const router = createBrowserRouter([
                 element: <ChangePassword/>,
                 loader: changePasswordLoader,
                 action: changePasswordAction,
+                errorElement: <ErrorPage/>,
             }
         ]
 

@@ -6,11 +6,11 @@ export default function ErrorPage() {
 
     return (
         <>
-            <div className="bg-back h-full min-h-screen">
-                <div className="flex flex-col justify-center items-center">
-                    <div id="Error">
-                        <div className="justify-center items-center w-full h-full">
-                            <span className="text-white font-bold text-3xl"> Oops Something Went Wrong.</span>
+            <div className="flex bg-back h-full min-h-screen items-center justify-center">
+                <div className="flex justify-center items-center">
+                    <div id="Error" className="flex justify-center items-center w-full h-full">
+                        <div className="flex justify-center items-center w-full h-full">
+                            <span className="text-white font-bold text-3xl text-center"> Oops Something Went Wrong.</span>
                         </div>
                     </div>
                 </div>
