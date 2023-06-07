@@ -74,7 +74,7 @@ export default function Edit() {
                 </div>
                 <div
                     className="flex items-center col-start-2 col-end-8 box-content bg-pink-red h-16 md:h-20 lg:h-24 rounded-full drop-shadow-3xl justify-center">
-                    <a href={"/user/profile" + LoggedUserData.user_id} className="text-center">
+                    <a href={"/user/profile/" + LoggedUserData.user_id} className="text-center">
                         <span className="font-bold text-white text-xl">Return to Profile</span>
                     </a>
                 </div>
