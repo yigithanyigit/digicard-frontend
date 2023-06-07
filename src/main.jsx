@@ -19,12 +19,18 @@ import EditPersonalInfo, {loader as editPersonalInfoLoader, action as addPersona
 import EditSocials, {loader as editSocialLoader} from "./routes/editSocials.jsx";
 import AddSocial, {loader as addSocialLoader, action as addSocialAction} from "./routes/addSocial.jsx";
 import ChangePassword, {loader as changePasswordLoader, action as changePasswordAction} from "./routes/changePassword.jsx";
+import Index from "./routes/index.jsx";
 
 
 
 
 
 const router = createBrowserRouter([
+    {
+        path: "",
+        element: <Index/>,
+        errorElement: <ErrorPage/>,
+    },
     {
         path: "user",
         element: <Root/>,
