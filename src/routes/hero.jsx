@@ -60,13 +60,29 @@ export default function Hero() {
         }
 
     }
+    const generateVCF = (data, profile) => {
+        let mail = null
+        let tel = null
+        if(profile.length > 0)
+        {
+            for (const cell of profile) {
+                if(cell.type === "Mail")
+                {
+                    mail = cell.content
+                }
+                else if(cell.type === "Telephone")
+                {
+                    tel = cell.content
+                }
 
-    const generateVCF = (user, profile) => {
+            }
+        }
+
         const contactData = `BEGIN:VCARD
 VERSION:3.0
-FN:${user[0].name} ${user[0].surname}
-TEL;TYPE=CELL:${profile[0].content !== ' ' ? profile[0].content : ''}
-EMAIL:${profile[1].content !== ' ' ? profile[1].content : ''}
+FN:${data.name} ${data.surname}
+TEL;TYPE=CELL:${tel !== null ? tel : ''}
+EMAIL:${mail !== null ? mail : ''}
 END:VCARD`;
 
         const vcfBlob = new Blob([contactData], {type: "text/vcard"});
@@ -105,7 +121,7 @@ END:VCARD`;
                     </div>
                     <div id="saveContactsBox"
                          className="flex absolute box-content w-36 md:w-44 lg:w-56 h-8 md:h-10 rounded-full bg-bone justify-center items-center drop-shadow-3xl bottom-0 left-15 lg:left-20 ">
-                        <button id="saveContactButton" onClick={() => generateVCF(example.user, example.profile)}
+                        <button id="saveContactButton" onClick={() => generateVCF(user, userProfile)}
                                 className="text-pink-red text-lg lg:text-3xl md:text-2xl font-medium"> Save Contacts
                         </button>
                     </div>
