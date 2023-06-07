@@ -26,7 +26,7 @@ export default function Edit() {
         }
 
         fetch()
-        navigate("/user")
+        navigate("/")
     }
 
     // TODO If User is not logged in route to the login page
